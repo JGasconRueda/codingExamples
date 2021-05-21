@@ -17,7 +17,7 @@ public class ContarPalabras {
         String[] array = arrayPalabras.split(" ");
 
         for (String s : array) {
-            s = s.replaceAll("[,.]", "");
+            s = s.replaceAll("[,.;:]", "");
             Integer valor = result.get(s);
             if (valor == null) {
                 result.put(s, 1);
@@ -33,10 +33,10 @@ public class ContarPalabras {
     public static Map<String,Integer> ContarPalabrasConStreams(String arrayPalabras){
 
         return Arrays.stream(arrayPalabras.split(" ")).collect(
-                Collectors.toMap(s1 -> s1.replaceAll("[,.]", ""), s1 ->1,(s1, s2) -> s1=s1+1));
+                Collectors.toMap(s1 -> s1.replaceAll("[,.;:]", ""), s1 ->1,(s1, s2) -> s1=s1+1));
     }
 
-    private static boolean sonIguales(Map<String, Integer> first, Map<String, Integer> second) {
+    public static boolean sonIguales(Map<String, Integer> first, Map<String, Integer> second) {
         if (first.size() != second.size()) {
             return false;
         }
@@ -47,8 +47,4 @@ public class ContarPalabras {
                         .equals(second.get(e.getKey())));
     }
 
-    private static void imprimir(Map<String, Integer> map){
-        map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                .forEach(entry -> System.out.print(entry.getKey()+": "+entry.getValue()+" | "));
-    }
 }

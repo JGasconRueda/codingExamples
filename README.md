@@ -54,3 +54,8 @@ Indica si un numero se puede leer igual de izquierda a derecha y de derecha a iz
 <br>
 Ej: 1234321, 121, -1234321
 </h4>
+
+###*Contar palabras
+<h4>
+Cuenta las palabras de un texto ignorando los caracteres de puntuacion
+</h4>
