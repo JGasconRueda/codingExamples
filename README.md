@@ -59,3 +59,6 @@ Ej: 1234321, 121, -1234321
 <h4>
 Cuenta las palabras de un texto ignorando los caracteres de puntuacion
 </h4>
+
+###*FizzBuzz
+Dado un numero devolver fizz si es divisible por 3, buzz si es divisible por 5 y fizzbuzz si es divisible por 3 y por 5
