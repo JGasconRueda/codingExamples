@@ -62,3 +62,6 @@ Cuenta las palabras de un texto ignorando los caracteres de puntuacion
 
 ###*FizzBuzz
 Dado un numero devolver fizz si es divisible por 3, buzz si es divisible por 5 y fizzbuzz si es divisible por 3 y por 5
+
+###*Contar ciudades
+Dado un array de ciudades devolver un array con las n ciudades que mas se repiten
