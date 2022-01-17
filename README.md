@@ -65,3 +65,7 @@ Dado un numero devolver fizz si es divisible por 3, buzz si es divisible por 5 y
 
 ###*Contar ciudades
 Dado un array de ciudades devolver un array con las n ciudades que mas se repiten
+
+###*Anagramas
+Dados dos String indicar si son anagramas
+Dos String son anagramas si tienen los mismos caracteres en la misma frecuencia
